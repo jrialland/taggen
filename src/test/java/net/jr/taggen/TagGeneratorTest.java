@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class TagGeneratorTest {
 
-  @Test(timeout = 50)
+  @Test(timeout = 200)
   public void testSnakecase() {
     for (int i = 0; i < 1000; i++) {
       String tag = TagGenerator.newLowercaseTag();
@@ -17,7 +17,7 @@ public class TagGeneratorTest {
 
   }
 
-  @Test(timeout = 50)
+  @Test(timeout = 200)
   public void testCamelcase() {
     for (int i = 0; i < 1000; i++) {
       String tag = TagGenerator.newCamelcaseTag();
